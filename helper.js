@@ -13,4 +13,6 @@ navigator.mediaSession.setActionHandler('nexttrack', () => {
   forward.click();
 });
 
+await navigator.wakeLock.request('screen');
+
 })();

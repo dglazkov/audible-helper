@@ -1,0 +1,20 @@
+{
+    "name": "Glazkov's Audible Helper",
+    "version": "1.0",
+    "description": "This is a tiny extension to make 'Next/Previous Track' phone controls work in Audible",
+    "manifest_version": 2,
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.audible.com/webplayer*"
+            ],
+            "run_at": "document_idle",
+            "js": [
+                "helper.js"
+            ]
+        }
+    ]
+  }
